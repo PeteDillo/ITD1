@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(0, 0, 0); /* Change the background color here */
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the content inside the container */
+}
+h1 {
+    color: #33b1ff; /* Change the color of the H1 text here */
+}
+h3 {
+    color: #33b1ff; /* Change the color of the H3 text here */
+}
