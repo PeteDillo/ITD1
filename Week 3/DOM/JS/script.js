@@ -33,5 +33,29 @@ let tenItems= 10*itemCost
 //output
 document.querySelector("#tenItemCost").innerHTML = `Ten ${itemName}s cost $${tenItems}`
 
-// chaneg the css style of an html element
+// change the css style of an html element
 document.querySelector("#itemInfo").style.backgroundColor="red"
+
+
+//prompt the suer for yellow or violet
+let userChoice = prompt("Do you ant to see yellow or violet")
+
+//create a conditional for each choice
+
+if(userChoice === 'yellow'){
+    alert("if statement ran")
+}
+else if(userChoice === "violet"){
+    //change the class to second class 
+    alert("esle if ran")
+    document.querySelector(".firstClass").className = "secondClass"
+    document.querySelector("#changeText").className="secondClass";
+}
+else{
+    alert("else runs")
+    alert("you typed in something other than yellow or violet.")
+}
+
+// //Target the ID and give it a class
+// document.querySelector("#changeText").className="secondClass";
+
