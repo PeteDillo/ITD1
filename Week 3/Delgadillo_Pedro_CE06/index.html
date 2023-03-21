@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+   <!--Pedro Delgadillo
+        Mar 20 2023
+        3.6 Code Exercise 06: HTML Forms -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>3.6 Code Exercise 06: HTML Forms</title>
+</head>
+<body>
+    <h1>Fill'er Up</h1>
+    <h2>We can help you convert your gallons of milk to other forms of measurement.</h2>
+    <h3>Type in the number of gallons to start, choose your conversion and then press the button</h3>
+    <form>
+        <input type="number" id="gallons" required min="0" step="any"><label for="gallons"># of Gallons To Convert</label>
+        <fieldset>
+            <legend>What would you like to convert gallons to?</legend>
+            <input type="radio" name="milkConvertOption" value="Quarts" id="quartChoice" checked><label for="quartChoice">Quarts</label>
+            <input type="radio" name="milkConvertOption" value="Pints" id="pintChoice"><label for="pintChoice">Pints</label>
+            <input type="radio" name="milkConvertOption" value="Cups" id="cupChoice"><label for="cupChoice">Cups</label>
+        </fieldset>
+        <br>
+        <br>
+        <button type="button" id="convertButton">Convert Gallons</button>
+        <br>
+        <br>
+        <h3>Converted Values</h3>
+        <input type="number" placeholder="Press Button" id="quartsResults"><label for="quartsResults"> Quarts</label><br>
+        <input type="number" placeholder="Press Button" id="pintsResults"><label for="pintsResults"> Pints</label><br>
+        <input type="number" placeholder="Press Button" id="cupsResults"><label for="cupsResults"> Cups</label><br>
+    </form>
+    <hr>
+    <h1>Movie Star</h1>
+    <h2>We will determine what rank you are in the movie club, base on how many movies you have.</h2>
+    <h3>Fill in the number of each time of movies you have and then press the button to see your rank</h3>
+    <input type="number" id="dvdNum" required min="0" step="1"><label for="dvdNum">Number of DVDs you Own</label><br>
+    <input type="number" id="blurayNum" required min="0" step="1"><label for="blurayNum">Number of Blu-Rays you Own</label><br>
+    <input type="number" id="uvNum" required min="0" step="1"><label for="uvNum">Number of UltraViolets you Own</label><br>
+    <br>
+    <input type="button" id="movieButton" value="See Ranking">
+    <h1 id="movieResults"></h1>
+    <img id="picture" height="360">
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

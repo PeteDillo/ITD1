@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>HTML Forms</title> 
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form id="userInformation">
+
+
+
+
+        <input type="text" id="userName" required placeholder="your name here"><label for="userName">Type In Name</label><br>
+        <input type="number" id="num1" step=".01" min="0" max="50" required><label for="num1">please type in a number between 0 and 50</label><br>
+        <input type="number" id="num2" required><label for="num2">Please type in a number</label><br>
+        <input type="email" id="userEmail" required placeholder="test@test.com"><label for="userEmail">Email</label><br>
+        <input type="url" id="userURL" required placeholder="http://site.com"><label for="userURL">URL</label><br>
+        <input type="password" id="userPassword" required><label for="userPassword">Password</label><br>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Which color do you like best?</legend>
+            <input type="radio" name="colorChoices" value="blue" id="blueChoice"><label for="blueChoice">Blue</label>
+            <input type="radio" name="colorChoices" value="red" id="redChoice" ><label for="redChoice">Red</label>
+            <input type="radio" name="colorChoices" value="purple" id="purpleChoice" checked><label for="purpleChoice">Purple</label>
+        </fieldset>
+        <br>    
+        <br>
+        <fieldset>
+            <legend>What typoe of pet would you like?</legend>
+            <input type="checkbox" name="petType" value="dog" id="dogChoice" checked><label for="dogChoice">dog</label>
+            <input type="checkbox" name="petType" value="cat" id="catChoice"><label for="catChoice">cat</label>
+            <input type="checkbox" name="birdType" value="bird" id="birdChoice"><label for="birdChoice">bird</label>
+        </fieldset>
+        <br>    
+        <br>    
+        <input type="button" id="button1" value="button1">
+        <input type="reset" id="reset1" value="Reset">
+        <button type="button" id="button2">button2</button>
+        <button type="reset" id="reset2">click me to erase</button>
+        <input type="submit" id="submit1" value="submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <h1>calculate area of a rectangle</h1>
+    <form id="question2">
+        <input type="number" id="width" step="any" min='0' required><label for="width">type in a width</label><br>
+        <input type="number" id="height" step="any" min='0' required><label for="height">type in a height</label>
+        <br>
+        <input type="button" id="calcArea" value="calculate area">
+        <br>
+        <input type="text" id="area" ><label for="area" >Area</label>
+        <h1 id="finalResults"></h1>
+    </form>
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

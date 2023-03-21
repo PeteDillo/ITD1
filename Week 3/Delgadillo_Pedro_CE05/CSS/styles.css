@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+h1{
+    color: orangered;
+}
+
+h3{
+    color: green;
+}
+h2{
+    color: yellow;
+}
+.discountApplied{
+    background-color: green;
+    color: white;
+}
+
+.discountDenied{
+    background-color: yellow;
+    color:black
+}
+
+#text{
+    visibility: hidden;
+}
+
+#picture{
+    visibility: hidden;
+}
