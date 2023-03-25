@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Bringing it All Together Problem one </title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <h3>I am going to convert the Temperature for you!</h3>
+    <p>Type in a number and the type of Temperature is it C  or F I will give you the other</p>
+    <form id="tempConverter">
+        <label for="startTemp">Temperature</label><input type="number" id="startTemp" step="any" required>
+        <input type="radio" name="tempType" value="Celsius" id="celsius"><label for="celsius">Celsius</label>
+        <input type="radio" name="tempType" value="fahrenheit" id="fahrenheit" checked><label for="fahrenheit">Fahrenheit</label>
+        <br><br>
+        <input type="button" id="convertTemp" value="Convert Temperature">
+        <br><br>
+        <h1 id="textResults"></h1>
+    </form>
+    <script src="JS/script.js"></script>
+</body>
+</html>

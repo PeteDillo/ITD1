@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Bringing it Together All Problem #2</title>
+</head>
+<body>
+    <form id="movieTicket">
+        <h1>Movie Ticket Cost</h1>
+        <h3>Type in your age and the movie start time and I will tell you the cost</h3>
+        <input type="number" id="age" min="0" max="120" required><label for="age" >Age</label>
+        <h3>Enter Start Time of movie in Hrs:Mins</h3>
+        <br>
+        <input type="number" id="timeHours" min="1" max="12" required><label for="TimeHours" >Hr</label>
+        <input type="number" id="timeMins" min="0" max="59" required><label for="timeMins" >Min</label> 
+        <input type="radio" id="am" name="timeOfDay" value="AM" ><label for="AM">AM</label>
+        <input type="radio" id=pm name="timeOfDay" value="PM"  checked><label for="PM">PM</label>
+        <br><br>
+        <input type="button" id="calcTicketPrice" value="Get Ticket Price">
+        <br><br>
+        <h1 id="tickePrice"></h1>
+    </form> 
+    <script src="JS/script.js"></script>
+</body>
+</html>

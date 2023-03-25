@@ -60,7 +60,7 @@ document.querySelector("#movieButton").addEventListener("click", function (e) {
         document.querySelector("#picture").src = "IMG/bronzeStar.jpg";
     }   
     // If the user has 50 up to 100 movies Show the Silver Star Graphic 
-    else if(totalMovies<= 100){
+    else if(totalMovies< 100){
         //target H1 and img tag and set ranking
         document.querySelector("#movieResults").innerHTML = `Your collection contains ${totalMovies} movies, which makes you a silver star member.`;
         document.querySelector("#picture").src = "IMG/silverStar.jpg";
